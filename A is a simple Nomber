@@ -1,0 +1,9 @@
+var k,a,i:integer;
+begin
+readln(a);
+k:=0;
+for i:= 2 to a-1 do
+if a mod i= 0 then k:=k+1;
+if k=0 then writeln('Простое')
+else writeln('Cоставное');
+end.
