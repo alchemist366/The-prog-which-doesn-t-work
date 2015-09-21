@@ -1,0 +1,19 @@
+var
+a,b,f,k,i:integer;
+begin
+a:= random(49)+ 1;
+k:=0;
+write('Введите кол-во ваших жизней:= ');
+readln(b);
+for i:= 1 to b do
+begin
+writeln('Попытка №',i);
+ read(f);
+  if f=a then begin writeln('Победа!'); k:=k+1; break; end
+  else if f>a then writeln('Меньше')
+       else writeln ('Больше');
+       writeln(' Осталось ',b-i,'HP');
+ end;
+ if k=0 then writeln('Ты проиграл(а)');
+ end.
+ 
